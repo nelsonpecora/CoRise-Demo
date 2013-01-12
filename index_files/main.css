@@ -1,0 +1,1073 @@
+/*--  light blue=43ABD5, dark blue=4C80AF  --*/
+
+@font-face {
+    font-family: 'Scout-B';
+    src: url("../fonts/Scout-Bold.eot");
+    src: url("../fonts/Scout-Bold.ttf") format("truetype"),
+         url("../fonts/Scout-Bold.svg#font") format("svg"),
+         url("../fonts/Scout-Bold.woff"); 
+}
+
+html{ height: 100%; }
+
+body{
+	background: #FFF;
+	width: 100%;
+	min-width: 978px;
+	height: 100%;
+	margin: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 200px;
+	text-align: center;
+}
+
+#wrap { min-height: 100%; }
+
+#main {
+	overflow: hidden; 
+	padding-bottom: 144px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+ 
+html[xmlns] .clearfix { display: block; }
+ 
+* html .clearfix { height: 1%; }
+
+.clear_both { clear: both; }
+
+
+/*--- Overlay Container
+-------------------------------------------------------------------------------------------------------------- */
+.overlayContainer {
+	background: url("overlayBackground.png") repeat;
+	position: fixed;
+	display: none;
+	width: 100%;
+	min-width: 978px;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: auto;
+	text-align: center;
+	z-index: 1001;
+}
+
+.overlay {
+	min-height: 100px;
+	min-width: 300px;
+}
+
+.googleXButton {
+	background: url("deleteRow.png") no-repeat center bottom;
+	position: absolute;
+	display: block;
+	width: 15px;
+	height: 16px;
+	top: 10px;
+	right: 10px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+
+
+/*--- Globals
+-------------------------------------------------------------------------------------------------------------- */
+.lastRight, .views-row-last {
+	margin-right: 0px !important;
+}
+
+.noFloorSpace {
+	margin-bottom: 0px !important;
+}
+
+.view-id-investment_banking.view-display-id-block_3 .views-row-4, .view-id-investment_banking.view-display-id-block_3 .views-row-8, .view-id-investment_banking.view-display-id-block_3 .views-row-12, .view-id-investment_banking.view-display-id-block_3 .views-row-16, .view-id-investment_banking.view-display-id-block_3 .views-row-20, .view-id-investment_banking.view-display-id-block_3 .views-row-24, .view-id-investment_banking.view-display-id-block_3 .views-row-28, .view-id-investment_banking.view-display-id-block_3 .views-row-32, .view-id-investment_banking.view-display-id-block_3 .views-row-36, .view-id-investment_banking.view-display-id-block_3 .views-row-40, .view-id-investment_banking.view-display-id-block_3 .views-row-44, .view-id-investment_banking.view-display-id-block_3 .views-row-48, .view-id-investment_banking.view-display-id-block_3 .views-row-52, .view-id-investment_banking.view-display-id-block_3 .views-row-56, .view-id-investment_banking.view-display-id-block_3 .views-row-60, .view-id-investment_banking.view-display-id-block_3 .views-row-64, .view-id-investment_banking.view-display-id-block_3 .views-row-68, .view-id-investment_banking.view-display-id-block_3 .views-row-72, .view-id-investment_banking.view-display-id-block_3 .views-row-76, .view-id-investment_banking.view-display-id-block_3 .views-row-80, .view-id-investment_banking.view-display-id-block_3 .views-row-84, .view-id-investment_banking.view-display-id-block_3 .views-row-88, .view-id-investment_banking.view-display-id-block_3 .views-row-92, .view-id-investment_banking.view-display-id-block_3 .views-row-96, .view-id-investment_banking.view-display-id-block_3 .views-row-100, .view-id-investment_banking.view-display-id-block_3 .views-row-104, .view-id-investment_banking.view-display-id-block_3 .views-row-108, .view-id-investment_banking.view-display-id-block_3 .views-row-112, .view-id-investment_banking.view-display-id-block_3 .views-row-116, .view-id-investment_banking.view-display-id-block_3 .views-row-120, .view-id-investment_banking.view-display-id-block_3 .views-row-124, .view-id-investment_banking.view-display-id-block_3 .views-row-128, .view-id-investment_banking.view-display-id-block_3 .views-row-132, .view-id-investment_banking.view-display-id-block_3 .views-row-136, .view-id-investment_banking.view-display-id-block_3 .views-row-140, .view-id-investment_banking.view-display-id-block_3 .views-row-144, .view-id-investment_banking.view-display-id-block_3 .views-row-148, .view-id-investment_banking.view-display-id-block_3 .views-row-152, .view-id-investment_banking.view-display-id-block_3 .views-row-156, .view-id-investment_banking.view-display-id-block_3 .views-row-160, .view-id-investment_banking.view-display-id-block_3 .views-row-164, .view-id-investment_banking.view-display-id-block_3 .views-row-168, .view-id-investment_banking.view-display-id-block_3 .views-row-172, .view-id-investment_banking.view-display-id-block_3 .views-row-176, .view-id-investment_banking.view-display-id-block_3 .views-row-180, .view-id-investment_banking.view-display-id-block_3 .views-row-184, .view-id-investment_banking.view-display-id-block_3 .views-row-188, .view-id-investment_banking.view-display-id-block_3 .views-row-192, .view-id-investment_banking.view-display-id-block_3 .views-row-196, .view-id-investment_banking.view-display-id-block_3 .views-row-200 {
+	margin-right: 0px !important;
+}
+
+#block-views-strategic_equity-block_3 .view-content .views-row-4, #block-views-strategic_equity-block_3 .view-content .views-row-8, #block-views-strategic_equity-block_3 .view-content .views-row-12, #block-views-strategic_equity-block_3 .view-content .views-row-16, #block-views-strategic_equity-block_3 .view-content .views-row-20, #block-views-strategic_equity-block_3 .view-content .views-row-24, #block-views-strategic_equity-block_3 .view-content .views-row-28, #block-views-strategic_equity-block_3 .view-content .views-row-32, #block-views-strategic_equity-block_3 .view-content .views-row-36, #block-views-strategic_equity-block_3 .view-content .views-row-40, #block-views-strategic_equity-block_3 .view-content .views-row-44, #block-views-strategic_equity-block_3 .view-content .views-row-48, #block-views-strategic_equity-block_3 .view-content .views-row-52 {
+	margin-right: 0px !important;
+}
+
+.bckRndImg {
+	width: 100%;
+	min-width: 1700px;
+	max-width: 1700px;
+	height: auto;
+	z-index: 1;
+}
+
+.node a, .node a:visited {
+	color: #43ABD5;
+}
+
+.node a:hover {
+	color: #4C80AF;
+}
+
+
+
+/*--- Header Section
+-------------------------------------------------------------------------------------------------------------- */
+#header {
+	height: 164px;
+}
+
+#logo {
+	float: left;
+	margin: 38px 7px 0 0;
+}
+
+#logo a, #logo a:visited {
+	background: url("logo.png") no-repeat;
+	display: block;
+	width: 190px;
+	height: 57px;
+	text-indent: -9999px;
+}
+
+#topNavBar {
+	float: left;
+}
+
+#topNavBar li {
+	position: relative;
+	float: left;
+	width: 190px;
+	margin-right: 7px;
+	font-weight: 400;
+}
+
+#topNavBar li a {
+	display: block;
+}
+
+.navShape {
+	background: #EBEBEB;
+	position: absolute;
+	display: none;
+	width: 190px;
+	height: 38px;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #EBEBEB;
+	font-size: 14px;
+	z-index: 2;
+}
+
+.navShape img {
+	position: absolute;
+	top: 6px;
+	left: 6px;
+}
+
+.navBlankBox {
+	background: #FFF;
+	position: absolute;
+	display: block;
+	width: 190px;
+	height: 38px;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #ADAFB0;
+	font-size: 14px;
+	z-index: 1;
+}
+
+.navTitle {
+	display: block;
+	margin: 51px 0 11px 0;
+	color: #43ABD5;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navBlurb {
+	color: #606060;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	line-height: 16px;
+}
+
+.active .navShape {
+	background: #FFF !important;
+	border-bottom: 1px solid #606060 !important;
+}
+
+.active .navShape img {
+	top: -33px !important;
+}
+
+.active .navTitle, .active .navBlurb {
+	color: #606060 !important;
+}
+
+.navHover .navShape {
+	background: #EBEBEB;
+	border-bottom: 1px solid #ADAFB0;
+}
+
+.navHover .navBlurb {
+	color: #C4C4C4;
+}
+
+.navActive a.navShap {
+	border-bottom: 1px solid #FFF;
+}
+
+
+
+/*--- Content Wrappers
+-------------------------------------------------------------------------------------------------------------- */
+.container, #block-views-investment_banking-block_2, #block-views-investment_banking-block_3 .content, .view-display-id-block_4, #block-views-strategic_equity-block_2, #block-views-strategic_equity-block_3, #block-views-team-block_2, #block-views-team-block_3 {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 978px;
+	width /**/: 978px;
+	text-align: left;
+}
+
+#pgCntnt, .clear-block {
+	color: #606060;
+}
+
+
+
+/*--- Home Page Section
+-------------------------------------------------------------------------------------------------------------- */
+#mainPicShapeHome {
+	background: url("mainBigShapesHome.png") no-repeat right bottom;
+	position: relative;
+	width: 100%;
+	height: 420px;
+	margin-bottom: -420px;
+	z-index: 2;
+}
+
+#homeMainPic {
+	background: #606060;
+	position: relative;
+	width: 100%;
+	height: 429px;
+	margin-bottom: 40px;
+	overflow: hidden;
+	color: #FFF;
+	text-align: center;
+}
+
+#imgAndBlurb {
+	position: relative;
+	width: 100%;
+	min-width: 1700px;
+	max-width: 1700px;
+	min-height: 429px;
+	margin: 0 auto;
+}
+
+.homeImg {
+	width: 100%;
+	height: 100%;
+}
+
+.picBlurb {
+	position: absolute;
+	bottom: 204px;
+	left: 96px;
+	font-family: Scout-B, Impact, Arial, sans-serif;
+	font-size: 66px;
+	text-align: left;
+	z-index: 2;
+}
+
+.homeBlurb, #homeCntnt .views-row-1 {
+	width: 810px;
+	color: #5D5D5D;
+	font-size: 25px;
+	font-weight: 100;
+	line-height: 30px;
+}
+
+.homeBlurb a, .homeBlurb a:visited,  #homeCntnt .views-row-1 a,  #homeCntnt .views-row-1 a:visited {
+	color: #5D5D5D;
+}
+
+.homeBlurb a:hover,  #homeCntnt .views-row-1 a:hover {
+	color: #43ABD5;
+}
+
+.homeBlurb b,  #homeCntnt .views-row-1 b {
+	font-weight: 600;
+}
+
+.homeSmallBlurbWrapper, #homeCntnt .views-row-2, #homeCntnt .views-row-3 {
+	margin-top: 27px;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 19px;
+}
+
+#homeCntnt .views-row-3 {
+	margin-bottom: 0px !important;
+}
+
+.homeSmallBlurb, #homeCntnt .views-row-2, #homeCntnt .views-row-3 {
+	float: left;
+	width: 390px;
+	margin-right: 30px;
+} 
+
+
+
+/*--- Inside Pages Shared Section
+-------------------------------------------------------------------------------------------------------------- */
+.insideMainPic {
+	background: #606060;
+	position: relative;
+	width: 100%;
+	height: 208px;
+	margin-bottom: 40px;
+	overflow: hidden;
+	z-index: 1;
+	text-align: center;
+}
+
+.insideImg {
+	min-height: 208px;
+}
+
+.pgHdrShape {
+	display: block;
+	width: 44px;
+	height: 43px;
+}
+
+.pgHdr {
+	margin: 10px 0 40px 0;
+	color: #4C80AF;
+	font-size: 38px;
+	font-weight: 100;
+	line-height: 38px;
+}
+
+.blurbsWrapper, #block-views-investment_banking-block_2 .content, #block-views-strategic_equity-block_2 .content {
+	width: 565px;
+}
+
+.mainBlurb, .view-display-id-block_2 .views-row-1 {
+	font-size: 25px;
+	font-weight: 100;
+	line-height: 30px;
+}
+
+.smallerBlurb, .view-display-id-block_2 .views-row-2, .view-display-id-block_2 .views-row-3 {
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 23px;
+}
+
+.subTitle, #block-views-strategic_equity-block_3 .view-header, #node-5 .view-display-id-block_3 .view-header, #node-5 .view-display-id-block_4 .view-header {
+	margin-top: 68px;
+	color: #4C80AF;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+/*--- Investment Banking Section
+-------------------------------------------------------------------------------------------------------------- */
+#mainPicShapeIB {
+	background: url("mainBigShapesIB.png") no-repeat right center;
+	position: relative;
+	width: 100%;
+	min-width: 978px;
+	height: 312px;
+	margin-bottom: -312px;
+	z-index: 2;
+}
+
+#shapeIB {
+	background: url("shapeBigInvestmentBanking.png");
+}
+
+#blurbOneIB, .view-display-id-block_2 .views-row-2 {
+	margin-top: 32px;
+}
+
+#blurbTwoIB, .view-display-id-block_2 .views-row-3 {
+	margin: 19px 0 68px 0;
+}
+
+.clients, .view-id-investment_banking.view-display-id-block_3 .views-row  {
+	float: left;
+	width: 222px;
+	margin-right: 30px;
+	padding: 13px 0;
+	border-top: 1px solid #BCBCBC;
+	color: #606060;
+}
+
+.clientName, .view-id-investment_banking.view-display-id-block_3 .views-row .views-field-title {
+	margin-bottom: 6px;
+	font-size: 16px;
+	font-weight: 200;
+	text-align: center;
+}
+
+.clientSector, .view-id-investment_banking.view-display-id-block_3 .views-row .views-field-field-client-sector-value {
+	display: none;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.view-id-investment_banking.view-display-id-block_3 .views-row .views-field-field-client-sector-value .field-item {
+	margin-right: 5px;
+}
+
+
+
+/*--- Industry Research Section
+-------------------------------------------------------------------------------------------------------------- */
+#mainPicShapeIR {
+	background: url("mainBigShapesIR.png") no-repeat right center;
+	position: relative;
+	width: 100%;
+	min-width: 978px;
+	height: 312px;
+	margin-bottom: -312px;
+	z-index: 2;
+}
+
+#shapeIR {
+	background: url("shapeBigIndustryResearch.png");
+}
+
+#block-views-industry_research-block_3 {
+	position: relative;
+	margin: 0 auto;
+	margin-top: -276px;
+	padding: 0;
+	width: 978px;
+	width /**/: 978px;
+	text-align: left;
+}
+
+.additionalInfo, #node-3 .view-display-id-block_3 {
+	float: right;
+	width: 138px;
+	margin-right: 84px;
+	color: #606060;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.additionalInfo a, .additionalInfo a:visited {
+	color: #43ABD5;
+	font-style: italic;
+}
+
+.additionalInfo a:hover {
+	text-decoration: underline;
+}
+
+.greyLine {
+	background: #BFBFBF;
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin: 28px 0 10px 0;
+}
+
+.additionalInfo h3 {
+	margin-bottom: 18px;
+	font-weight: 400;
+}
+
+.additionalInfo ul {
+	list-style-image: url("picDoc.png");
+	margin-left: 20px;
+}
+
+.additionalInfo ul li {
+	margin-bottom: 10px;
+}
+
+#block-views-industry_research-block_4 {
+	margin-top: 255px;
+}
+
+.pdfLink-box {
+	margin-top: 15px;
+}
+
+.pdfLink {
+	background: url("picDoc.png") no-repeat;
+	display: block;
+	float: left;
+	width: 150px;
+	margin: 0 15px 15px 0;
+	padding-left: 20px;
+	line-height: 16px;
+}
+
+.chartWrapper {
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.chartTitle {
+	margin: 30px 0 10px 0;
+	color: #000;
+	font-size: 13px;
+}
+
+.marketChart {
+	width: 800px;
+	text-align: center;
+}
+
+.chartCaption {
+	width: 600px;
+	margin-top: 25px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 200px;
+	line-height: 19px;
+}
+
+#visualization {
+	margin: 0 auto !important;
+}
+
+.tweetsWrapper {
+	float: left;
+	width: 642px;
+}
+
+.blogWrapper {
+	float: right;
+	width: 306px;
+}
+
+.hdrCurrent {
+	margin-top: 20px; 
+	padding: 7px 0 20px 0; 
+	border-top: 1px solid #BFBFBF;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#blogCurrentTitle, #blogCurrentTitle a, #blogCurrentTitle a:visited {
+	color: #43ABD5 !important;
+	font-size: 16px;
+	font-weight: 100;
+}
+
+#blogDate {
+	margin: 10px 0 17px 0;
+	font-size: 12px;
+	font-style: italic;
+	font-weight: 200;
+}
+
+#blogCurrentInfo {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+#blogCurrentMoreLink a, #blogCurrentMoreLink a:visited {
+	color: #43ABD5 !important;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+.hdrRecent {
+	margin-top: 24px; 
+	padding: 7px 0 20px 0; 
+	border-top: 1px solid #BFBFBF;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.blogRecentWrapper {
+	margin-bottom: 10px;
+}
+
+.blogRecentTitle a, .blogRecentTitle a:visited {
+	color: #606060;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.blogRecentTitle a:hover {
+	color: #43ABD5;
+}
+
+.remainingBlogPosts {
+	margin-top: 20px;
+}
+
+.blogRecDate {
+	color: #BCBCBC;
+	font-style: italic;
+	line-height: 20px;
+}
+
+#tweetContainer {
+	margin-top: 20px;
+}
+
+.tweetBox {
+	background: #EDEDED;
+	position: relative;
+	float: left;
+	width: 289px;
+	height: 535px;
+	margin: 0 4px 4px 0;
+	padding: 20px 15px;
+	color: #606060;
+}
+
+.tweetBox h4 a, .tweetBox h4 a:visited {
+	display: block;
+	margin-bottom: 40px;
+	color: #606060;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.tweetBox h4 a:hover {
+	color: #43ABD5;
+}
+
+#twitPost {
+	margin-bottom: 30px;
+}
+
+#twitPost .starthidden {
+	display: none;
+}
+
+#twitPost #twitAvatar {
+	float: left;
+}
+
+#twitPost #twitContent {
+	float: right;
+	width: 220px;
+}
+
+#twitPost #twitContent a, #twitPost #twitContent a:visited {
+	color: #606060;
+}
+
+#twitPost #twitContent a:hover {
+	color: #43ABD5;
+}
+
+a.viewMoreFeeds, a:visited.viewMoreFeeds {
+	position: absolute;
+	color: #43ABD5;
+	bottom: 20px;
+	right: 15px;
+	font-style: italic;
+}
+
+
+
+/*--- Strategic Equity Section
+-------------------------------------------------------------------------------------------------------------- */
+#mainPicShapeSE {
+	background: url("mainBigShapesSE.png") no-repeat right center;
+	position: relative;
+	width: 100%;
+	min-width: 978px;
+	height: 312px;
+	margin-bottom: -312px;
+	z-index: 2;
+}
+
+#shapeSE {
+	background: url("shapeBigStrategicEquity.png");
+}
+
+.projectsWrapper, #block-views-strategic_equity-block_3 .view-content {
+	margin-top: 13px;
+	padding: 27px 0 45px 0;
+	border-top: 7px solid #DDDDDD;
+}
+
+.projects, #block-views-strategic_equity-block_3 .view-content .views-row {
+	float: left;
+	width: 222px;
+	min-height: 225px;
+	margin: 0 30px 30px 0;
+	color: #606060;
+}
+
+.projectName, #block-views-strategic_equity-block_3 .view-content .views-row .views-field-title {
+	font-size: 22px;
+	font-weight: 200;
+}
+
+.projectSubTitle, #block-views-strategic_equity-block_3 .view-content .views-row .views-field-field-project-subtitle-value {
+	margin: 2px 0 15px 0;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.projectInfo, #block-views-strategic_equity-block_3 .view-content .views-row .views-field-field-project-teaser-value {
+	line-height: 16px;
+}
+
+#block-views-strategic_equity-block_3 .view-content .views-row a, #block-views-strategic_equity-block_3 .view-content .views-row a:visited {
+	color: #43ABD5;
+}
+
+#block-views-strategic_equity-block_3 .view-content .views-row a:hover {
+	color: #4C80AF;
+}
+
+
+
+/*--- Team Section
+-------------------------------------------------------------------------------------------------------------- */
+#mainPicShapeTeam {
+	background: url("mainBigShapesTeam.png") no-repeat right center;
+	position: relative;
+	width: 100%;
+	min-width: 978px;
+	height: 312px;
+	margin-bottom: -312px;
+	z-index: 2;
+}
+
+.wholeBlurbWrapper .blurbsWrapper, #node-3 .view-display-id-block_2, #node-5 .view-display-id-block_2 .views-row-1 {
+	float: left;
+}
+
+#block-views-team-block_2 .view-display-id-block_2 {
+	width: 978px;
+}
+
+#node-3 .view-display-id-block_2 .view-content, #node-5 .view-display-id-block_2 .views-row-1 {
+	width: 565px;
+}
+
+.extraBlurb, #node-5 .view-display-id-block_2 .views-row-2 {
+	float: right;
+	width: 271px;
+	margin: -13px 35px 0 0 !important;
+	font-family: Scout-B, Impact, Arial, sans-serif;
+	font-size: 43px;
+	line-height: 43px;
+}
+
+#partners, #node-5 .view-display-id-block_3 {
+	float: left;
+	width: 726px;
+}
+
+.teamWrapper, #node-5 .view-display-id-block_3 .view-content {
+	display: block;
+	width: 726px;
+	margin-top: 20px;
+	border-top: 1px solid #DDDDDD;
+}
+
+.teamMember {
+	position: relative;
+	padding: 20px 0;
+	border-bottom: 7px solid #DCDCDC;
+}
+
+.memberPic {
+	float: left;
+	width: 168px;
+	height: 133px;
+	margin-right: 15px;
+}
+
+.memberInfo {
+	display: block;
+	float: left;
+	width: 123px;
+	margin-right: 30px;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.memberInfo a, .memberInfo a:visited {
+	color: #43ABD5;
+}
+
+.memberInfo a:hover {
+	color: #4C80AF !important;
+}
+
+.memberInfo a, .memberInfo p {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.memberInfo p a {
+	display: inline;
+}
+
+.memberInfo a:hover {
+	color: #43ABD5;
+}
+
+a.memberName, a:visited.memberName {
+	color: #4C80AF;
+}
+
+a:hover.memberName {
+	color: #43ABD5 !important;
+}
+
+.memberPosition, #node-5 .view-display-id-block_4 .views-field-field-board-position-value {
+	font-style: italic;
+}
+
+.memberBio {
+	display: block;
+	float: left;
+	width: 390px;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.memberBio p {
+	margin-bottom: 20px;
+}
+
+.memberTeaser {
+	min-height: 133px;
+}
+
+.extendedBio {
+	display: none;
+}
+
+a.btnMore, a:visited.btnMore {
+	position: absolute;
+	display: block;
+	bottom: 10px;
+	right: 0px;
+	color: #43ABD5;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: right;
+}
+
+a.btnLess, a:visited.btnLess {
+	display: block;
+	color: #43ABD5;
+	font-size: 12px;
+	text-align: right;
+}
+
+#advisors, #node-5 .view-display-id-block_4 {
+	float: right;
+	width: 222px;
+}
+
+.advisorsWrappers, #node-5 .view-display-id-block_4 .view-content {
+	display: block;
+	width: 222px;
+	margin-top: 20px;
+	padding-top: 15px;
+	border-top: 1px solid #DDDDDD;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+#node-5 .view-display-id-block_4 .view-content {
+	display: block;
+	width: 222px;
+	margin-top: 20px;
+	padding-top: 0px;
+	border-top: 1px solid #DDDDDD;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.boardMember {
+	position: relative;
+	padding: 20px 0;
+	border-bottom: 7px solid #DCDCDC;
+}
+
+.boardMember a, .boardMember a:visited, #node-5 .view-display-id-block_4 .views-field-field-person-first-name-value, #node-5 .view-display-id-block_4 .views-field-field-person-last-name-value {
+	display: block;
+	color: #4C80AF;
+	line-height: 12px;
+}
+
+#node-5 .view-display-id-block_4 .comingSoon {
+	display: block;
+	color: #606060;
+	border-top: 1px solid #DDDDDD;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.boardMember a:hover {
+	color: #43ABD5;
+}
+
+.summaryAdvisorBio, #node-5 .view-display-id-block_4 .views-field-field-board-description-value {
+	height: 131px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.extendedAdvisorBio {
+	display: none;
+	margin: 20px 0;
+}
+
+.extendedAdvisorBio a {
+	display: inline;
+}
+
+.memberLinkedin {
+	display: block !important;
+	color: #43ABD5 !important;
+	font-size: 12px !important;
+	margin-top: 10px;
+}
+
+.closeAdvisorBio {
+	position: absolute;
+	display: block !important;
+	bottom: 10px;
+	right: 0;
+	margin-top: 10px;
+	color: #43ABD5 !important;
+	font-size: 12px !important;
+	line-height: 12px;
+}
+
+.memberLinkedin:hover, .closeAdvisorBio:hover {
+	color: #4C80AF !important;
+}
+
+
+
+/*--- Footer Section
+-------------------------------------------------------------------------------------------------------------- */
+#footer {
+	background: #606060;
+	position: relative;
+	clear: both;
+	width: 100%;
+	min-width: 978px;
+	height: 114px;
+	margin-top: 1px;
+	padding: 20px 0 11px 0; 
+	color: #BCBCBC;
+	font-size: 12px;
+	line-height: 17px;
+}
+
+#footerCompanyInfo {
+	float: left;
+	margin-right: 90px;
+}
+
+.companyName {
+	color: #FFF;
+}
+
+.footerCopyright {
+	margin-top: 50px;
+	font-size: 11px;
+}
+
+#footerContact {
+	float: left;
+}
+
+#footerContact a, #footerContact a:visited {
+	color: #BCBCBC;
+	text-decoration: none;
+}
+
+#footerContact a:hover {
+	color: #43ABD5;
+}
+
+#footerLinks {
+	float: right;
+	display: table-cell;
+	height: 25px;
+	line-height: 25px;
+	text-align: right;
+	vertical-align: top;
+}
+
+#footerLinks a, #footerLinks a:visited {
+	color: #000;
+	vertical-align: top;
+}
+
+#footerShapes {
+	background: url("footerShapes.png") no-repeat;
+	position: absolute;
+	display: block;
+	width: 128px;
+	height: 33px;
+	bottom: 4px;
+	right: 4px;
+}
+
+/*--- Footer Fixes
+-------------------------------------------------------------------------------------------------------------- */
+/*--- IE Fix ---*/
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap { display: table; height: 100%; }
+	</style>
+<![endif]-->
+
+/*--- Opera Fix ---*/
+body:before {
+	content: "";
+	height: 100%;
+	float: left;
+	width: 0;
+	margin-top: -32767px;/
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.picBlurb { bottom: 38px; }
+}
+
+@media screen and (max-device-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) {
+	/* iPhone CSS rules here */
+	.memberTeaser { min-height: 188px; }
+	.boardMember { position: relative; padding: 0 0 93px; }
+	.summaryAdvisorBio { font-size: 14px; }
+	.closeAdvisorBio { position: absolute; left: 0px; bottom: 10px; }
+}

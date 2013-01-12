@@ -1,0 +1,93 @@
+/* fix for the image overlay */
+#mainPicShapeHome {
+	background-position: right top;
+	position: absolute;
+	margin-top: -3px;
+}
+
+/* widescreen layout */
+@media only screen and (min-width: 1280px) {
+	
+}
+
+/* tablet layout */
+@media only screen and (max-width: 1023px) {
+	body, #footer {
+		min-width: 0;
+	}
+	
+	.container, #block-views-investment_banking-block_2, #block-views-investment_banking-block_3 .content, .view-display-id-block_4, #block-views-strategic_equity-block_2, #block-views-strategic_equity-block_3, #block-views-team-block_2, #block-views-team-block_3 {
+		width: 90%;
+		width /**/: 90%;
+	}
+	
+	.homeBlurb, #homeCntnt .views-row-1 {
+		width: 100%;
+	}
+	
+	.picBlurb {
+		bottom: 2%;
+		left: 2%;
+	}
+	
+	#topNavBar {
+		margin-bottom: 30px;
+		width: 100%;
+	}
+	
+	#topNavBar li {
+		width: 24%;
+		margin-right: 0;
+		padding-right: 1%;
+	}
+	
+	.navShape {
+		width: 100%;
+	}
+	
+	.navBlankBox {
+		width: 100%;
+	}
+	
+	#mainPicShapeHome {
+		display: none;
+	}
+	
+	.homeSmallBlurb, #homeCntnt .views-row-2, #homeCntnt .views-row-3 {
+		width: 47.5%;
+		margin-right: 5%;
+	}
+	.homeSmallBlurbWrapper, #homeCntnt .views-row-2, #homeCntnt .views-row-3 {
+		font-size: 16px;
+		line-height: 22px;
+	}
+}
+
+/* small tablet/phone layout */
+@media only screen and (max-width: 767px) {
+	#imgAndBlurb {
+		min-width: 0;
+	}
+	.picBlurb {
+		width: 96%;
+	}
+	.homeSmallBlurb, #homeCntnt .views-row-2, #homeCntnt .views-row-3 {
+		width: 90%;
+		margin: 30px 5% 0;
+	}
+	#main {
+		padding-bottom: 40px;
+	}
+}
+
+
+/* very small screens, phones only */
+@media only screen and (max-width: 529px) {
+	#topNavBar li {
+		width: 49%;
+		margin-top: 10px;
+	}
+	#topNavBar li:nth-of-type(2n+3) {
+		clear: left;
+	}
+}
