@@ -90,4 +90,7 @@
 	#topNavBar li:nth-of-type(2n+3) {
 		clear: left;
 	}
+	.footerCopyright {
+		margin-top: 20px;
+	}
 }
