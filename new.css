@@ -40,6 +40,9 @@
 		margin-right: 0;
 		padding-right: 1%;
 	}
+	#topNavBar li a {
+		max-width: 90%;
+	}
 	
 	.navShape {
 		width: 100%;
